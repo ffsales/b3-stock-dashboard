@@ -34,3 +34,15 @@ The app runs at `http://localhost:8501` by default.
 - Use `dropna(how="all")` to handle weekend/holiday gaps before passing data to chart builders.
 
 **Stocks tracked:** Petrobras (`PETR4.SA`), Itaú Unibanco (`ITUB4.SA`), Vale (`VALE3.SA`). Benchmark overlay: Ibovespa (`^BVSP`).
+
+## GitHub Repository
+
+**Repo:** https://github.com/ffsales/b3-stock-dashboard
+
+**Auto-sync:** A `PostToolUse` hook in `~/.claude/settings.json` automatically commits and pushes to `origin main` after every file Write or Edit, whenever there are uncommitted changes. The `gh` CLI is installed at `~/.local/bin/gh`.
+
+To push manually:
+```bash
+export PATH="$HOME/.local/bin:$PATH"
+git add -A && git commit -m "your message" && git push origin main
+```
